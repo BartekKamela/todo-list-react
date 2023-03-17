@@ -1,0 +1,35 @@
+.section {
+    box-shadow: 0px 0px 5px -2px rgb(151 151 151 / 82%);
+    margin: 10px 0px;
+}
+
+.section__header {
+    margin-bottom: 0px;
+    padding: 15px;
+    border: 1px solid #dadada;
+    background-color: white;
+}
+
+.section__header--modifier {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.section__headerTitle {
+    margin: 0px;
+    min-width: 120px;
+}
+
+.section__content {
+    padding: 15px;
+    border: 1px solid #dadada;
+    background-color: white;
+}
+
+@media (max-width: 500px) {
+
+    .section__header--modifier {
+        display: flex;
+        flex-direction: column;
+    }
+}
