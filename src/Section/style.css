@@ -4,20 +4,17 @@
 }
 
 .section__header {
+    display: grid;
+    grid-template-columns: 1fr auto;
     margin-bottom: 0px;
     padding: 15px;
     border: 1px solid #dadada;
     background-color: white;
 }
 
-.section__header--modifier {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
 .section__headerTitle {
     margin: 0px;
-    min-width: 120px;
+    min-width: 145px;
 }
 
 .section__content {
@@ -26,10 +23,8 @@
     background-color: white;
 }
 
-@media (max-width: 500px) {
-
-    .section__header--modifier {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 540px) {
+    .section__header {
+        grid-template-columns: 1fr;
     }
 }
