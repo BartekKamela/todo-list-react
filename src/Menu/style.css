@@ -4,6 +4,7 @@
 }
 
 .menu__button {
+    min-width: 167px;
     color: #008080;
     font-size: smaller;
     border: none;
@@ -24,12 +25,10 @@
     cursor: auto;
 }
 
-@media (max-width: 500px) {
-
+@media (max-width: 540px) {
     .menu {
-        margin-top: 15px;
-        display: flex;
-        gap: 15px;
         flex-direction: column;
+        margin-top: 15px;
+        gap: 15px;
     }
 }
