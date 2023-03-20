@@ -25,6 +25,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## DEMO
 ![demo](https://bartekkamela.github.io/to-do-list/images/demo.gif)
 
+You can visit this website here: [To Do List React](https://bartekkamela.github.io/todo-list-react)
+
 ## Available Scripts
 
 In the project directory, you can run:
