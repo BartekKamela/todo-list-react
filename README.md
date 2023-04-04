@@ -12,11 +12,21 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>JavaScript - ES6</li>
-<li>React.js</li>
-<li>Node.js</li>
+<ul>
 <li>Alternative CSS box model</li>
 <li>Normalize.css</li>
+<li>Flex</li>
+<li>Grid</li>
+</ul>
+<li>JavaScript - ES6</li>
+<ul>
+<li>Node.js</li>
+<li>React.js</li>
+<li>Create React App</li>
+<li>Babel</li>
+<li>Webpack</li>
+<li>JSX</li>
+</ul>
 <li>CamelCase naming convention</li>
 <li>BEM naming convention</li>
 <li>Markdown</li>
