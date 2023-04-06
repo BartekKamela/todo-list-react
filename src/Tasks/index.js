@@ -15,7 +15,7 @@ const Tasks = ({ tasks, hiddenTasks }) => (
                 >
                     {task.content}
                 </span>
-                <button class="task__button task__button--remove">&#128465;</button>
+                <button className="task__button task__button--remove">&#128465;</button>
             </li>
         ))}
     </ul>
