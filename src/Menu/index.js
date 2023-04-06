@@ -1,10 +1,10 @@
 import "./style.css";
 
-const Menu = ({ tasks, hideDone }) => (
+const Menu = ({ tasks, hideDone, toggleHideDone }) => (
     <div className="menu">
         {tasks.length > 0 && (
             <>
-                <button className="menu__button">
+                <button onClick={toggleHideDone} className="menu__button">
                     {hideDone ? "Pokaż" : "Ukryj"} ukończone
                 </button>
                 <button
