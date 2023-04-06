@@ -6,16 +6,19 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import Menu from "./Menu";
 
-const tasks = [
-  { id: 1, content: "przejść na Reacta", done: false },
-  { id: 2, content: "zjeść obiad", done: true },
-];
-
 function App() {
   const [hideDone, setHideDone] = useState(false);
+  const [tasks, setTasks] = useState([
+    { id: 1, content: "Zapłacić rachunki", done: false },
+    { id: 2, content: "Zrobić zakupy", done: true },
+  ]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
+  };
+
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id));
   };
 
   return (
@@ -31,7 +34,8 @@ function App() {
           <Tasks 
             tasks={tasks} 
             hideDone={hideDone} 
-            key={tasks.id} 
+            key={tasks.id}
+            removeTask={removeTask}
           />
         } 
         extraHeaderContent={
