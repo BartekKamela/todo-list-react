@@ -3,6 +3,13 @@ import styled from "styled-components";
 export const Buttons = styled.div`
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 540px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 15px;
+    }
 `; 
 
 export const Button = styled.button`
@@ -24,11 +31,5 @@ export const Button = styled.button`
     &:disabled {
         color: #b5b5b5;
         cursor: auto;
-    }
-
-    @media (max-width: 540px) {
-        flex-direction: column;
-        margin-top: 15px;
-        gap: 15px;
     }
 `;
