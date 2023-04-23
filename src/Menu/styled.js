@@ -14,7 +14,7 @@ export const Buttons = styled.div`
 
 export const Button = styled.button`
     min-width: 167px;
-    color: #008080;
+    color: ${({ theme }) => theme.color.teal};
     font-size: smaller;
     border: none;
     cursor: pointer;
@@ -24,12 +24,13 @@ export const Button = styled.button`
     transition: 1s;
 
     &:hover {
-        color: #00dfdf;
+        filter: brightness(120%);
         transition: 1s;
     }
 
     &:disabled {
-        color: #b5b5b5;
         cursor: auto;
+        filter: none;
+        color: ${({ theme }) => theme.color.silver};
     }
 `;

@@ -11,7 +11,7 @@ export const Header = styled.header`
     margin-bottom: 0px;
     padding: 15px;
     border: 1px solid #dadada;
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white};
 
     @media (max-width: 540px) {
         grid-template-columns: 1fr;
@@ -26,5 +26,5 @@ export const HeaderTitle = styled.h2`
 export const Content = styled.div`
     padding: 15px;
     border: 1px solid #dadada;
-    background-color: white;
+    background-color: ${({ theme }) => theme.color.white};
 `;

@@ -16,6 +16,6 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 900px;
         min-width: 327px;
         margin: 0 auto;
-        background-color: #ececec;
+        background-color: ${({ theme }) => theme.color.gallery};
     }
 `;

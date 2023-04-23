@@ -6,7 +6,7 @@ export const StyledForm = styled.form`
     grid-template-columns: auto 150px;
     grid-gap: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         display: flex;
         flex-wrap: wrap;
     }  
@@ -15,7 +15,7 @@ export const StyledForm = styled.form`
 export const Input = styled.input`
     padding: 7px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 100%;
         margin-bottom: -5px;
     }
@@ -24,19 +24,19 @@ export const Input = styled.input`
 export const Button = styled.button`
     padding: 9px;
     border: none;
-    background-color: #008080;
-    color: white;
+    background-color: ${({ theme }) => theme.color.teal};
+    color: ${({ theme }) => theme.color.white};
     cursor: pointer;
     transition: 1s;
     transform: scale(1);
 
     &:hover {
-        background-color: #009c9c;
+        filter: brightness(120%);
         transition: 1s;
         transform: scale(1.04);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         width: 100%;
     }
 `;
