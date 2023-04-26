@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-export const useTasks = () => {
-    const getInitialTasks = () => {
-        const tasksFromLocalStorage = localStorage.getItem("tasks");
-        return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : [];
-    };
+const getInitialTasks = () => {
+    const tasksFromLocalStorage = localStorage.getItem("tasks");
+    return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : [];
+};
 
+export const useTasks = () => {
     const [tasks, setTasks] = useState(getInitialTasks);
 
     useEffect(() => {
