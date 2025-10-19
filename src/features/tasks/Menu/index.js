@@ -1,10 +1,16 @@
+import { useSelector, useDispatch } from "react-redux";
 import { Buttons, Button } from "./styled";
+import { selectTasks, toggleHideDone } from "../tasksSlice";
 
-const Menu = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-    <Buttons>
+const Menu = ({ setAllDone }) => {
+    const {tasks, hideDone} = useSelector(selectTasks);
+    const dispatch = useDispatch();
+
+    return (
+        <Buttons>
         {tasks.length > 0 && (
             <>
-                <Button onClick={toggleHideDone}>
+                <Button onClick={() => dispatch(toggleHideDone())}>
                     {hideDone ? "Pokaż" : "Ukryj"} ukończone
                 </Button>
                 <Button
@@ -16,6 +22,7 @@ const Menu = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
             </>
         )}
     </Buttons>
-);
+    )
+};
 
 export default Menu;
