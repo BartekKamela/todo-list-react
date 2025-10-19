@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import { useTasks } from "../../useTasks";
 import Container from "../../common/Container";
 import Header from "../../common/Header";
@@ -8,16 +8,10 @@ import TasksList from "./TasksList";
 import Menu from "./Menu";
 
 function Tasks() {
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
 
   const {
-    tasks,
+    // tasks,
     removeTask,
-    toggleTaskDone,
     setAllDone,
     addNewTask,
   } = useTasks();
@@ -33,18 +27,11 @@ function Tasks() {
         title="Lista zadań"
         content={
           <TasksList
-            tasks={tasks}
-            hideDone={hideDone}
-            key={tasks.id}
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
           <Menu
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
             setAllDone={setAllDone}
           />
         }
