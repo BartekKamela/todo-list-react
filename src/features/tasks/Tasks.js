@@ -11,9 +11,9 @@ function Tasks() {
 
   const {
     // tasks,
-    removeTask,
+    // removeTask,
     setAllDone,
-    addNewTask,
+    // addNewTask,
   } = useTasks();
 
   return (
@@ -21,14 +21,12 @@ function Tasks() {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        content={<Form addNewTask={addNewTask} />}
+        content={<Form />}
       />
       <Section
         title="Lista zadań"
         content={
-          <TasksList
-            removeTask={removeTask}
-          />
+          <TasksList />
         }
         extraHeaderContent={
           <Menu
