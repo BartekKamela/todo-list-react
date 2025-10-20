@@ -1,5 +1,3 @@
-import { useSelector } from "react-redux";
-import { useTasks } from "../../useTasks";
 import Container from "../../common/Container";
 import Header from "../../common/Header";
 import Section from "../../common/Section";
@@ -8,14 +6,6 @@ import TasksList from "./TasksList";
 import Menu from "./Menu";
 
 function Tasks() {
-
-  const {
-    // tasks,
-    // removeTask,
-    setAllDone,
-    // addNewTask,
-  } = useTasks();
-
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -29,9 +19,7 @@ function Tasks() {
           <TasksList />
         }
         extraHeaderContent={
-          <Menu
-            setAllDone={setAllDone}
-          />
+          <Menu />
         }
       />
     </Container>
