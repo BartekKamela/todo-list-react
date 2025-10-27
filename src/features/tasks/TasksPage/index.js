@@ -4,6 +4,7 @@ import Section from "../../../common/Section";
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Menu from "./Menu";
+import Button from "./Button";
 
 function TasksPage() {
   return (
@@ -12,6 +13,9 @@ function TasksPage() {
       <Section
         title="Dodaj nowe zadanie"
         content={<Form />}
+        extraHeaderContent={
+          <Button />
+        }
       />
       <Section
         title="Lista zadań"
