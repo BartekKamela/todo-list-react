@@ -1,11 +1,11 @@
-import Container from "../../common/Container";
-import Header from "../../common/Header";
-import Section from "../../common/Section";
+import Container from "../../../common/Container";
+import Header from "../../../common/Header";
+import Section from "../../../common/Section";
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Menu from "./Menu";
 
-function Tasks() {
+function TasksPage() {
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -26,4 +26,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;
