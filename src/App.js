@@ -1,19 +1,15 @@
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom/cjs/react-router-dom.min";
+import Navigation from "./features/Navigation";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
-import { StyledNavLink } from "./styled";
 import { toAuthor, toTasks, toTask } from "./routes";
 
 
 export default () => (
     <HashRouter>
-        <nav>
-            <ul>
-                <li><StyledNavLink to="/zadania">Zadania</StyledNavLink></li>
-                <li><StyledNavLink to="/autor">Autor</StyledNavLink></li>
-            </ul>
-            <Switch>
+        <Navigation />
+             <Switch>
                 <Route path={toTask()}>
                     <TaskPage />
                 </Route>
@@ -27,6 +23,5 @@ export default () => (
                     <Redirect to={toTasks()} />
                 </Route>
             </Switch>
-        </nav>
     </HashRouter>
 );
