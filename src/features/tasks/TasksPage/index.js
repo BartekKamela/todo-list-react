@@ -5,6 +5,7 @@ import Form from "./Form";
 import TasksList from "./TasksList";
 import Menu from "./Menu";
 import Button from "./Button";
+import Search from "./Search";
 
 function TasksPage() {
   return (
@@ -16,6 +17,10 @@ function TasksPage() {
         extraHeaderContent={
           <Button />
         }
+      />
+      <Section
+        title="Wyszukiwarka"
+        content={<Search />}
       />
       <Section
         title="Lista zadań"
