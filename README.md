@@ -43,7 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 </ul>
 
 ## DEMO
-![demo](https://bartekkamela.github.io/to-do-list/images/demo.gif)
+![demo](demo.gif)
 
 You can visit this website here: [To Do List React](https://bartekkamela.github.io/todo-list-react)
 
