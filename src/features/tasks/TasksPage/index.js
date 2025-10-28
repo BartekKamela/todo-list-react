@@ -4,7 +4,7 @@ import Section from "../../../common/Section";
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Menu from "./Menu";
-import Button from "./Button";
+import Button from "./FetchExampleTasksButton";
 import Search from "./Search";
 
 function TasksPage() {
