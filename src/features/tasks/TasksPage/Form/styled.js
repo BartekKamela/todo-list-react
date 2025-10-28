@@ -12,15 +12,6 @@ export const StyledForm = styled.form`
     }  
 `;
 
-export const Input = styled.input`
-    padding: 7px;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        width: 100%;
-        margin-bottom: -5px;
-    }
-`;
-
 export const Button = styled.button`
     padding: 9px;
     border: none;

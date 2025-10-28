@@ -1,5 +1,14 @@
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
+import Input from "../../Input"
+
 export default () => {
+    const location = useLocation();
+    const query = (new URLSearchParams(location.search)).get("szukaj");
+
     return (
-        <>nanana</>
+        <Input 
+            placeholder="Filtruj zadania"
+            value={query || ""}
+        />
     )
 };
