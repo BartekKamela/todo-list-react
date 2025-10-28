@@ -6,7 +6,7 @@ export const List = styled.ul`
   justify-content: center;
   width: 100%;
   margin: 0;
-  padding: 10px 10px;
+  padding: 20px 10px;
   list-style: none;
   background-color: ${({ theme }) => theme.color.teal};
 `;
@@ -17,11 +17,14 @@ export const Item = styled.li`
 
 export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
-    font-weight: bold;
-    
     color: ${({ theme }) => theme.color.silver};
+
+   &.hover {
+      color: ${({ theme }) => theme.color.white};
+    }    
     
     &.active {
+      font-weight: bold;
       color: ${({ theme }) => theme.color.white};
     }
 `;
