@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-const  Main = styled.main`
-    margin: 50px 20px 20px 20px;
+const Main = styled.main`
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 `;
 
 const Container = ({ children }) => (

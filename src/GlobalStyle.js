@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         word-break: break-word;
         justify-content: center;
-        max-width: 900px;
         min-width: 327px;
         margin: 0 auto;
         background-color: ${({ theme }) => theme.color.gallery};
