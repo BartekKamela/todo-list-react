@@ -9,7 +9,7 @@
     - [`npm run eject`](#npm-run-eject)
 
 ## General Info
-My fourth task-project from YouCode - To Do List React \
+My fourteenth task-project from YouCode - To Do List React 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Technologies
@@ -33,6 +33,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <li>Styled Components</li>
 <li>Hooks: useState, useRef, custom Hook</li>
 <li>Redux</li>
+<li>Saga</li>
+<li>Redux Router</li>
+<li>Redux Toolkit</li>
 </ul>
 <li>CamelCase naming convention</li>
 <li>BEM naming convention</li>
